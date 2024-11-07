@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("images/360_F_266381525_alVrbw15u5EjhIpoqqa1eI5ghSf7hpz7.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+
+
+.app-container {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Title */
+.app-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-container {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 0.9em;
+    margin-top: 15px;
+    display: block;
+    text-align: left;
+}
+
+input[type="file"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    padding: 8px;
+    background-color: #e6e6e6;
+    color: #333;
+}
+
+.predict-button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #ff6a3d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.predict-button:hover {
+    background-color: #ff3d3d;
+}
+
+/* Popup Overlay Styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.popup-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+.popup-content {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content h2 {
+    margin-bottom: 10px;
+    color: #2575fc;
+}
+
+.close-button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 1em;
+    background-color: #ff6a3d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #ff3d3d;
+}
+input[type="text"],
+input[type="number"],
+button {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    color: #fff; /* White text color */
+    border: 1px solid #fff; /* White border */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px; /* Rounded corners */
+    width: 80%; /* Adjust width as needed */
+    font-size: 1rem;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none; /* Remove default outline */
+    border-color: #6a11cb; /* Highlighted border color */
+    background: rgba(106, 17, 203, 0.7); /* Slightly brighter background on focus */
+}
+
+button {
+    background-color: #2575fc;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a11cb; /* Button hover effect */
+}

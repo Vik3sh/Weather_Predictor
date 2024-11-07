@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1 class="app-title">Weather Prediction System</h1>
+        <div class="form-container">
+            <label class="file-label" for="fileInput">Upload Weather Data (CSV):</label>
+            <input type="file" id="fileInput" accept=".csv">
+            
+            <label class="days-label" for="daysInput">Enter Number of Days for Prediction:</label>
+            <input type="number" id="daysInput" placeholder="e.g., 7" min="1">
+            
+            <button onclick="predictWeather()" class="predict-button">Predict Weather</button>
+        </div>
+    </div>
+
+    <!-- Prediction Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <h2>Prediction Results</h2>
+            <pre id="result"></pre>
+            <button onclick="closePopup()" class="close-button">Close</button>
+        </div>
+    </div>
+
+    <script src="wether_prid.js"></script>
+</body>
+</html>
